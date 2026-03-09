@@ -180,6 +180,7 @@ body::before {
 .link-item.tenbis .icon { background: linear-gradient(135deg, #ffde59, #ffb300); }
 .link-item.menu .icon { background: linear-gradient(135deg, var(--fire), var(--fire-red)); }
 .link-item.kosher .icon { background: linear-gradient(135deg, #22c55e, #16a34a); }
+.link-item.site .icon { background: linear-gradient(135deg, #6366f1, #8b5cf6); }
 
 .link-item .icon svg {
   width: 24px;
@@ -232,6 +233,12 @@ body::before {
   font-size: 1.05rem;
   color: var(--text);
   padding: 4px 4px 2px;
+}
+
+.whatsapp-modal-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .kosher-images {
