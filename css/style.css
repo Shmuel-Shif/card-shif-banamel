@@ -176,7 +176,7 @@ body::before {
 .link-item.instagram .icon { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
 .link-item.whatsapp .icon { background: #25D366; }
 .link-item.tiktok .icon { background: #000; }
-.link-item.wolt .icon { background: #00c2ff; }
+.link-item.delivery .icon { background: #00c2ff; }
 .link-item.tenbis .icon { background: linear-gradient(135deg, #ffde59, #ffb300); }
 .link-item.menu .icon { background: linear-gradient(135deg, var(--fire), var(--fire-red)); }
 .link-item.kosher .icon { background: linear-gradient(135deg, #22c55e, #16a34a); }
@@ -206,7 +206,7 @@ body::before {
 
 .menu-modal {
   position: relative;
-  max-width: 600px;
+  max-width: 1100px;
   width: 100%;
   background: #050505;
   border-radius: 18px;
@@ -226,6 +226,11 @@ body::before {
 
 .menu-modal img + img {
   margin-top: 12px;
+}
+
+.kosher-images img + img,
+.menu-images img + img {
+  margin-top: 0;
 }
 
 .coming-soon-text {
@@ -249,7 +254,20 @@ body::before {
   align-items: center;
 }
 
+.menu-images {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
 .kosher-images img {
+  width: 48%;
+  max-height: calc(100vh - 180px);
+}
+
+.menu-images img {
   width: 48%;
   max-height: calc(100vh - 180px);
 }
@@ -307,10 +325,20 @@ body::before {
     flex-direction: column;
   }
 
+  .menu-images {
+    flex-direction: column;
+  }
+
   .kosher-images img {
     width: 100%;
     max-height: 80vh;
   }
+
+  .menu-images img {
+    width: 100%;
+    max-height: 80vh;
+  }
+
 }
 
 .footer {
